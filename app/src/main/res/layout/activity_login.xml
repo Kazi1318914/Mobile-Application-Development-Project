@@ -1,0 +1,111 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:background="@color/login_back"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    tools:context=".Login">
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:orientation="vertical"
+        android:paddingTop="30sp">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="130dp"
+            android:gravity="center"
+            android:background="@drawable/blooddrop"
+            android:contentDescription="TODO">
+        </ImageView>
+        <Space
+            android:layout_width="30dp"
+            android:layout_height="50dp">
+        </Space>
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:text=""
+            android:textStyle="normal"
+            android:textSize="35sp"
+            android:textColor="@color/dark">
+
+        </TextView>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterTextColor="@color/dark"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            app:hintTextColor="@color/dark"
+            app:boxStrokeColor="@color/dark"
+            android:hint="@string/hint_user">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/username"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:counterTextColor="@color/dark"
+            android:paddingLeft="20dp"
+            android:paddingRight="20dp"
+            app:hintTextColor="@color/dark"
+            app:boxStrokeColor="@color/dark"
+            app:passwordToggleEnabled="true"
+            android:hint="@string/hint_pass">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/pass"
+                android:inputType="textPassword"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"/>
+
+        </com.google.android.material.textfield.TextInputLayout>
+
+        <Button
+            android:id="@+id/btn_login"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/btn_login"
+            android:enabled="false"
+            android:textStyle="normal"
+            android:text="@string/login"
+            android:textColor="@drawable/btn_login_text"
+            android:textSize="25sp" />
+        <Button android:id="@+id/btn_signup"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/signup"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:enabled="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_login"
+            android:textColor="@drawable/btn_login_text"/>
+        <Button android:id="@+id/btn_forgot_pass"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/signup"
+            android:textSize="20sp"
+            android:textStyle="normal"
+            android:enabled="true"
+            android:layout_marginRight="20dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="15dp"
+            android:background="@drawable/btn_forgot_password"
+            android:textColor="@color/dark"/>
+    </LinearLayout>
+
+</LinearLayout>
