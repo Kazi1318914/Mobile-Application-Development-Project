@@ -5,6 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
+    android:scrollbars="none"
     android:background="@color/login_back"
     tools:context=".Home">
 
@@ -16,17 +17,19 @@
         <ImageView
             android:id="@+id/sv_iv"
             android:layout_width="match_parent"
-            android:layout_height="250dp"
-            android:background="@drawable/bgo"
+            android:layout_height="280dp"
+            android:src="@drawable/bgo"
             android:scaleType="fitXY"
             />
-
+        <!-- for buttons -->
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            android:paddingRight="5dp"
+            android:paddingLeft="5dp"
             android:weightSum="2"
             android:orientation="vertical">
-
+            <!-- row one -->
             <LinearLayout
                 android:layout_weight="1"
                 android:layout_width="match_parent"
@@ -35,89 +38,248 @@
                 android:orientation="horizontal"
                 android:weightSum="3"
                 >
-                <Button
-                    android:layout_weight="1"
-                    android:id="@+id/bt00"
+                <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_height="150dp"
-                    android:padding="10dp"
-                    android:text="Search"
-                    android:elevation="10dp"
-                    android:backgroundTint="@color/splashbg"
-                    android:drawableTop="@drawable/ic_search_black_24dp"
-                    style="?attr/materialButtonOutlinedStyle"
-                    />
-                <Button
                     android:layout_weight="1"
-                    android:id="@+id/bt01"
+                    android:layout_height="130dp"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:background="@color/colorGrapeFruit"
+                    android:weightSum="3"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:clickable="true"
+                        android:src="@drawable/ic_search_black_24dp"
+                        android:tint="@color/colorWhite"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:clickable="true"
+                        android:layout_weight="1"
+                        android:text="@string/search"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorGrapeFruitDark"
+                        />
+                </LinearLayout>
+                <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_height="150dp"
-                    android:padding="10dp"
-                    android:elevation="10dp"
-                    android:backgroundTint="@color/splashbg"
-                    android:drawableTop="@drawable/ic_message_black_24dp"
-                    android:text="Feed"
-                    style="?attr/materialButtonOutlinedStyle"
-                    />
-                <Button
                     android:layout_weight="1"
-                    android:id="@+id/bt02"
+                    android:layout_height="130dp"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:background="@color/colorAqua"
+                    android:weightSum="3"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:clickable="true"
+                        android:src="@drawable/ic_message_black_24dp"
+                        android:tint="@color/colorWhite"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:text="@string/feed"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorAquaDark"
+                        />
+                </LinearLayout>
+                <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_height="150dp"
-                    android:padding="10dp"
-                    android:elevation="10dp"
-                    android:backgroundTint="@color/splashbg"
-                    android:drawableTop="@drawable/ic_account_balance_black_24dp"
-                    android:text="Organization"
-                    style="?attr/materialButtonOutlinedStyle"
-                    />
+                    android:layout_weight="1"
+                    android:layout_height="130dp"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:background="@color/colorGrass"
+                    android:weightSum="3"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:clickable="true"
+                        android:src="@drawable/ic_account_balance_black_24dp"
+                        android:tint="@color/colorWhite"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/organization"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:paddingTop="10dp"
+                        android:clickable="true"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorGrassDark"
+                        />
+                </LinearLayout>
             </LinearLayout>
+            <!-- row one ends -->
 
-
+            <!-- row two -->
             <LinearLayout
                 android:layout_weight="1"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
                 android:orientation="horizontal"
                 android:weightSum="3"
                 >
-                <Button
-                    android:layout_weight="1"
-                    android:id="@+id/bt10"
+                <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_height="150dp"
-                    android:text="Ambulance"
-                    android:padding="10dp"
-                    android:elevation="10dp"
-                    android:backgroundTint="@color/splashbg"
-                    android:drawableTop="@drawable/ic_airport_shuttle_black_24dp"
-                    style="?attr/materialButtonOutlinedStyle"
-                    />
-                <Button
                     android:layout_weight="1"
-                    android:id="@+id/bt11"
+                    android:layout_height="130dp"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:background="@color/colorBitterSweet"
+                    android:weightSum="3"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:clickable="true"
+                        android:src="@drawable/ic_airport_shuttle_black_24dp"
+                        android:tint="@color/colorWhite"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:text="@string/ambulance"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorBitterSweetDark"
+                        />
+                </LinearLayout>
+                <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_height="150dp"
-                    android:text="Thelasemia"
-                    android:padding="10dp"
-                    android:elevation="10dp"
-                    android:backgroundTint="@color/splashbg"
-                    android:drawableTop="@drawable/ic_hotel_black_24dp"
-                    style="?attr/materialButtonOutlinedStyle"
-                    />
-                <Button
                     android:layout_weight="1"
-                    android:id="@+id/bt12"
+                    android:layout_height="130dp"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:background="@color/colorBlueJean"
+                    android:weightSum="3"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:clickable="true"
+                        android:src="@drawable/ic_hotel_black_24dp"
+                        android:tint="@color/colorWhite"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/thelasemia"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:clickable="true"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorBlueJeanDark"
+                        />
+                </LinearLayout>
+                <LinearLayout
                     android:layout_width="0dp"
-                    android:layout_height="150dp"
-                    android:text="About"
-                    android:padding="10dp"
-                    android:elevation="10dp"
-                    android:backgroundTint="@color/splashbg"
-                    android:drawableTop="@drawable/ic_info_black_24dp"
-                    style="?attr/materialButtonOutlinedStyle"
-                    />
+                    android:layout_weight="1"
+                    android:layout_height="130dp"
+                    android:layout_margin="2dp"
+                    android:orientation="vertical"
+                    android:background="@color/colorMint"
+                    android:weightSum="3"
+                    >
+                    <ImageView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="2"
+                        android:clickable="true"
+                        android:src="@drawable/ic_info_black_24dp"
+                        android:tint="@color/colorWhite"
+                        />
+                    <TextView
+                        android:layout_width="match_parent"
+                        android:layout_height="0dp"
+                        android:layout_weight="1"
+                        android:text="@string/info"
+                        android:textAlignment="center"
+                        android:textSize="20dp"
+                        android:clickable="true"
+                        android:paddingTop="10dp"
+                        android:textColor="@color/colorWhite"
+                        android:background="@color/colorMintDark"
+                        />
+                </LinearLayout>
             </LinearLayout>
+            <!-- row two ends -->
+        </LinearLayout>
+
+        <!-- blood gives -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:padding="10dp"
+        >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/blood_type_donor_vs_receiver"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-45dp"
+                android:src="@drawable/bloodgraph"
+                />
+        </LinearLayout>
+        <!-- rh factor graph -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_marginTop="-60dp"
+            android:padding="10dp"
+            >
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/blood_type_rh_circulatory_system"
+                android:textSize="20sp"
+                android:textStyle="bold"
+                android:layout_marginTop="30dp"
+                android:gravity="center"
+                />
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="-205dp"
+                android:src="@drawable/rhfactorblood"
+                />
         </LinearLayout>
 
     </LinearLayout>
