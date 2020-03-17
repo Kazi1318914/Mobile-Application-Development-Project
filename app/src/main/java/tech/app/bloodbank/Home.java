@@ -3,7 +3,9 @@ package tech.app.bloodbank;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
+import android.view.View;
 import android.widget.ImageView;
+import android.widget.Toast;
 
 public class Home extends AppCompatActivity {
 
@@ -32,5 +34,9 @@ public class Home extends AppCompatActivity {
             }
         };
         iv.postDelayed(r,5000);
+    }
+
+    public void test(View view) {
+        Toast.makeText(this,"LayoutClickableDone",Toast.LENGTH_LONG).show();
     }
 }
