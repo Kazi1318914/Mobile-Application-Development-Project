@@ -70,7 +70,7 @@
                         android:clickable="true"
                         android:layout_weight="1"
                         android:id="@+id/tv00"
-                        android:text="@string/search"
+                        android:text="@string/request"
                         android:textAlignment="center"
                         android:textSize="20dp"
                         android:paddingTop="10dp"
