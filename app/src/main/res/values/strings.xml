@@ -33,4 +33,10 @@
     <string name="blood_type_donor_vs_receiver">Blood Type( Donor VS Receiver)</string>
     <string name="blood_type_rh_circulatory_system">Blood Type Rh Circulatory System</string>
     <string name="forgot_password">Forgot password?</string>
+    <string name="request_for_blood">Request For Blood</string>
+    <string name="request">Request</string>
+    <string name="place_to_donate_blood">Place to Donate blood</string>
+    <string name="address_of_the_hospital">Address of the Hospital</string>
+    <string name="message_to_donor">Message to Donor</string>
+    <string name="reason_for_asking">Reason for asking</string>
 </resources>
